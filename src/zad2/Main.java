@@ -30,7 +30,6 @@ public class Main {
                                 .map(e -> "to " + e.split(" ")[1] + " - price in PLN:\t" + (int)(Double.parseDouble( e.split(" ")[2])*ratePLNvsEUR))
                                 .collect(Collectors.toList());
 
-    for (String r : result)
-        System.out.println(r);
+    for (String r : result) System.out.println(r);
   }
 }
